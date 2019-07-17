@@ -21,4 +21,5 @@ We use an implementation of modular decomposition which is developped by Fabien 
 
 ## References
 [1] [Kazuaki Yamazaki, Toshiki Saitoh, Masashi Kiyomi, and Ryuhei Uehara: “Enumeration of nonisomorphic interval graphs and nonisomorphic permutation graphs,” Theoretical Computer Science, to appear.](https://www.sciencedirect.com/science/article/pii/S0304397519303056)
+
 [2] [Ryuhei Uehara: Graph Catalogs, http://www.jaist.ac.jp/~uehara/graphs/](http://www.jaist.ac.jp/~uehara/graphs/)
