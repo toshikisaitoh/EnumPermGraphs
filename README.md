@@ -16,7 +16,7 @@ Th programs are implementation of an algorithm which enumerates all permutation 
 ```
 Permutations represent permutation diagrams of permutation graphs. Each permutation is a canonical form of a permutation graph, that is, the permutations have one to one correspondence to the permutation graphs. You can see the part of the results in [[2]](2)
 
-We use an implementation of modular decomposition which is developped by Fabien de Montgolfier. You can see the program as [here](https://github.com/vbraun/graph-modular-decomposition). 
+We use an implementation of modular decomposition which is developped by Fabien de Montgolfier. You can see the program [here](https://github.com/vbraun/graph-modular-decomposition). 
 
 
 ## References
