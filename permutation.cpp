@@ -507,12 +507,11 @@ void Permutation::print(std::ofstream &ofs) const
 		return;
 	}
 
-	ofs << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = perm.begin() ; it != perm.end() ; ++it){
-		ofs << *it << " ";
+		ofs << *it << ( it + 1 != perm.end() ? ' ' : '\n' );
 	}
-	ofs << ")" << std::endl;
+	ofs << std::flush;
 }
 
 void Permutation::print(std::ofstream &ofs, std::vector<int> vec) const
