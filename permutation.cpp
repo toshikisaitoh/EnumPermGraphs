@@ -492,12 +492,11 @@ void Permutation::print() const
 		return;
 	}
 
-	std::cout << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = perm.begin() ; it != perm.end() ; ++it){
-		std::cout << *it << " ";
+		std::cout << *it << ( it + 1 != perm.end() ? ' ' : '\n' );
 	}
-	std::cout << ")" << std::endl;
+	std::cout << std::flush;
 }
 
     
