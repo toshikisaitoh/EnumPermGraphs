@@ -531,9 +531,8 @@ void Permutation::print(std::ofstream &ofs, std::vector<int> vec) const
 
 void Permutation::print(std::vector<int> vec)
 {
-	std::cout << "( ";
 	for(int i=0 ; i<vec.size() ; i++){
-		std::cout << vec[i] << " ";
+		std::cout << vec[i] << ( i + 1 < vec.size() ? ' ' : '\n' );
 	}
-	std::cout << ")" << std::endl;
+	std::cout << std::endl;
 }
