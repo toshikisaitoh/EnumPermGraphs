@@ -521,12 +521,11 @@ void Permutation::print(std::ofstream &ofs, std::vector<int> vec) const
 		return;
 	}
 
-	ofs << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = vec.begin() ; it != vec.end() ; ++it){
-		ofs << *it << " ";
+		ofs << *it << ( it + 1 != vec.end() ? ' ' : '\n' );
 	}
-	ofs << ")" << std::endl;
+	ofs << std::flush;
 }
 
 
