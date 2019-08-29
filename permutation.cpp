@@ -492,12 +492,11 @@ void Permutation::print() const
 		return;
 	}
 
-	std::cout << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = perm.begin() ; it != perm.end() ; ++it){
-		std::cout << *it << " ";
+		std::cout << *it << ( it + 1 != perm.end() ? ' ' : '\n' );
 	}
-	std::cout << ")" << std::endl;
+	std::cout << std::flush;
 }
 
     
@@ -508,12 +507,11 @@ void Permutation::print(std::ofstream &ofs) const
 		return;
 	}
 
-	ofs << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = perm.begin() ; it != perm.end() ; ++it){
-		ofs << *it << " ";
+		ofs << *it << ( it + 1 != perm.end() ? ' ' : '\n' );
 	}
-	ofs << ")" << std::endl;
+	ofs << std::flush;
 }
 
 void Permutation::print(std::ofstream &ofs, std::vector<int> vec) const
@@ -523,20 +521,18 @@ void Permutation::print(std::ofstream &ofs, std::vector<int> vec) const
 		return;
 	}
 
-	ofs << "( ";
 	std::vector<int>::const_iterator it;
 	for(it = vec.begin() ; it != vec.end() ; ++it){
-		ofs << *it << " ";
+		ofs << *it << ( it + 1 != vec.end() ? ' ' : '\n' );
 	}
-	ofs << ")" << std::endl;
+	ofs << std::flush;
 }
 
 
 void Permutation::print(std::vector<int> vec)
 {
-	std::cout << "( ";
 	for(int i=0 ; i<vec.size() ; i++){
-		std::cout << vec[i] << " ";
+		std::cout << vec[i] << ( i + 1 < vec.size() ? ' ' : '\n' );
 	}
-	std::cout << ")" << std::endl;
+	std::cout << std::endl;
 }
